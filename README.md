@@ -1,13 +1,13 @@
 # Student Depression Risk Analysis System
 
 ## Group Members
-Lujain Alsudais |444200318
-Hailah Alghanam |444200893
-Nora Alangari |444202998
-Raghad Alghamlas| 444204503
-Shahad Almuhaisin |444200988
-Bushra Alkhulaifi |444201172
-Tala Alrajeh |444200459
+- Lujain Alsudais |444200318
+- Hailah Alghanam |444200893
+- Nora Alangari |444202998
+- Raghad Alghamlas| 444204503
+- Shahad Almuhaisin |444200988
+- Bushra Alkhulaifi |444201172
+- Tala Alrajeh |444200459
 
 ## Project Title
 Student Depression Risk Analysis Using Machine Learning
