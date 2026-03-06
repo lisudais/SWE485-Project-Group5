@@ -1,0 +1,13 @@
+Dataset URL :
+https://www.kaggle.com/datasets/aldinwhyudii/student-depression-and-lifestyle-100k-data
+
+
+License:
+MIT License
+
+Description:
+The dataset was created to analyze different factors that may influence depression among students. 
+It includes various variables related to students’ lifestyle and daily conditions such as academic pressure, 
+sleep duration, study and work hours, dietary habits, financial stress, and family history of mental illness. 
+By examining these factors together, the dataset helps identify how different aspects of students’ lives 
+may affect the likelihood of depression.
