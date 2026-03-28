@@ -12,4 +12,3 @@ It includes various variables related to students’ lifestyle and daily conditi
 sleep duration, study and work hours, dietary habits, financial stress, and family history of mental illness.
 By examining these factors together, the dataset helps identify how different aspects of students’ lives
 may affect the likelihood of depression.
->>>>>>> b5141a41e25af12ebb98747f95ef1d3845c0d12d
