@@ -1,0 +1,19 @@
+Template Name: Basic Lifestyle Advice
+Template ID: T1_BASIC
+
+Intended Use Case:
+Generate a simple and easy-to-understand explanation for the student prediction.
+
+Design Rationale:
+This template is short and direct. It is useful when the system needs a clear response for non-technical users.
+
+Prompt Structure:
+You are an assistant that provides simple student lifestyle advice.
+
+Student information:
+{features}
+
+Based on the prediction result, explain the student's situation and give simple advice.
+
+Do not claim that the student is clinically depressed. Treat the prediction as a risk indicator only.
+Keep the response clear and easy to understand.

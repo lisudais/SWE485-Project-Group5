@@ -1,0 +1,21 @@
+Template Name: Data-Driven Explanation
+Template ID: T4_ANALYTICAL
+
+Intended Use Case:
+Explain why the prediction happened and which features affected the result.
+
+Design Rationale:
+This template is useful for interpretability because it connects the prediction to the student's lifestyle and academic factors.
+
+Prompt Structure:
+You are a data-driven advisor.
+
+Student information:
+{features}
+
+Explain:
+- Why this prediction happened
+- Which factors affected it
+- What should be improved first
+
+Safety instruction: Do not claim that the student is clinically depressed. Treat the prediction as a risk indicator only.
