@@ -1,0 +1,24 @@
+## Phase 1 Meetings
+
+**Meeting 1: Dataset Selection**
+
+- **Agenda:** Discuss project domain, find suitable datasets on Kaggle.
+- **Outcomes:** Selected the "Student Lifestyle Dataset".
+
+**Meeting 2: Supervised Learning Models**
+
+- **Agenda:** Review cleaned data, decide on supervised algorithms.
+- **Outcomes:** Decided to train Random Forest, Logistic Regression, and SVM. 
+---
+
+## Phase 2 Meetings
+
+**Meeting 3: Clustering Algorithms**
+
+- **Agenda:** Discuss K-Means vs. DBSCAN and evaluate silhouette scores.
+- **Outcomes:** Discovered DBSCAN only found 1 cluster. Shifted focus to K-Means (K=3) as it successfully separated students into Low, Moderate, and High-Risk profiles.
+
+**Meeting 4: Generative AI & Final Integration**
+
+- **Agenda:** Design Generative AI prompt templates, prepare final presentation.
+- **Outcomes:** Created 4 distinct templates .

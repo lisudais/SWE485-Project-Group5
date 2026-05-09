@@ -1,0 +1,91 @@
+================================================================
+  KMEANS CLUSTER PROFILES  (K=3, Student Depression Risk Dataset)
+================================================================
+Dataset: 55,004 students | Features: standardised z-scores
+
+----------------------------------------------------------------
+CLUSTER 0 — "Sedentary Low-Study Students"   (n = 18,204 | 33.1%)
+----------------------------------------------------------------
+Key characteristics:
+  Study Hours         : -1.004  (well below average — lowest of all clusters)
+  Total Activity      : -1.082  (well below average — lowest of all clusters)
+  Activity Per Hour   :  -1.099  (well below average)
+  Social Media Hours  :  -0.425  (below average)
+  Sleep/Study Ratio   :   1.038  (well above average — sleep >> study time)
+  Sleep Duration      :   0.160  (slightly above average)
+  Stress Level        :  -0.065  (near average, slightly below)
+  Sleep Deficit       :  -0.156  (near average)
+  Depression Rate     :   9.67%
+
+Profile summary:
+  Students in this cluster study and exercise the least but also report
+  near-average stress and adequate sleep. They spend relatively little time
+  on social media. Their high sleep-to-study ratio indicates they prioritise
+  rest over academic activity. Depression risk is moderate.
+
+----------------------------------------------------------------
+CLUSTER 1 — "Balanced Active Students"       (n = 22,742 | 41.3%)
+----------------------------------------------------------------
+Key characteristics:
+  Study Hours         :  0.556  (above average)
+  Total Activity      :  0.638  (above average)
+  Activity Per Hour   :  0.633  (above average)
+  Social Media Hours  :  0.299  (slightly above average)
+  Sleep Duration      :  0.609  (above average)
+  Sleep Deficit       : -0.608  (well below average — least sleep debt)
+  Stress Level        : -0.185  (below average — lowest of all clusters)
+  Sleep/Study Ratio   : -0.402  (below average — study time balances sleep)
+  Depression Rate     :   8.99%  (LOWEST)
+
+Profile summary:
+  This is the healthiest group. Students study well, exercise regularly,
+  sleep enough, and carry the least stress and sleep debt of all clusters.
+  They represent a balanced lifestyle and have the lowest depression rate.
+  This cluster serves as the reference "low-risk" profile for the advice system.
+
+----------------------------------------------------------------
+CLUSTER 2 — "Sleep-Deprived High-Stress Students"  (n = 15,058 | 27.4%)
+----------------------------------------------------------------
+Key characteristics:
+  Sleep Duration      : -1.129  (well below average — LEAST sleep of all clusters)
+  Sleep Deficit       :  1.120  (well above average — MOST sleep debt)
+  Stress Level        :  0.367  (above average — highest of all clusters)
+  Study Hours         :  0.356  (above average)
+  Total Activity      :  0.333  (slightly above average)
+  Sleep/Study Ratio   : -0.632  (well below average — study dominates over sleep)
+  Social Media Hours  :  0.061  (near average)
+  Depression Rate     :  10.92%  (HIGHEST)
+
+Profile summary:
+  Students in this cluster are studying hard but sacrificing sleep to do so,
+  resulting in the highest sleep deficit and stress levels across all groups.
+  They carry the highest depression risk. This cluster most urgently needs
+  intervention-focused advice around sleep hygiene and stress management.
+
+================================================================
+  CLUSTER COMPARISON SUMMARY
+================================================================
+
+Metric               Cluster 0       Cluster 1       Cluster 2
+                  (Sedentary)      (Balanced)    (Sleep-Deprived)
+Size                 18,204          22,742          15,058
+Depression Rate       9.67%           8.99%          10.92%
+Sleep Duration        +0.16           +0.61           -1.13
+Stress Level          -0.07           -0.19           +0.37
+Study Hours           -1.00           +0.56           +0.36
+Sleep Deficit         -0.16           -0.61           +1.12
+Total Activity        -1.08           +0.64           +0.33
+
+Risk Level          Moderate           Low             High
+
+================================================================
+  INTEGRATION NOTES
+================================================================
+- KMeans K=3 is used for integration (DBSCAN found only 1 cluster,
+  making it unsuitable for personalized routing).
+- Cluster labels map to risk levels:
+    Cluster 0 → Moderate Risk (sedentary lifestyle, low engagement)
+    Cluster 1 → Low Risk     (balanced, healthy lifestyle)
+    Cluster 2 → High Risk    (sleep-deprived, stressed)
+- The cluster label and profile should be passed to Generative AI
+  prompts to enable context-aware, personalized advice.
